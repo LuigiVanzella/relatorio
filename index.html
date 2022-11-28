@@ -2,73 +2,452 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Relatorios</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modalidades</title>
         <style>
-        table, th, td {
-            border: 1px solid black;
-          }
-        </style>
-    </head>
-    <body style="background-image: url(textura-com-uma-cor-neutra-80418343\ \(1\).jpg)">
+            body{
+        background-image: url(imagemdefundo\ academia.jpeg);
+    }
+    p{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #cabeca{
+        background-color: rgba(0, 0, 0, 0.801);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        height: 85px;
+        margin-bottom: 5px;
+        padding:8px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #cabeca > a{
+        text-decoration: none;
+        color: white;
+        width: 500px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #musculacao{
+        background-color: rgba(0, 0, 0, 0.801);
+        justify-content: space-between;
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #olhaamocaai{
+        width: 17%;
+        position: absolute;
+        margin-left: 18%;
+        margin-top: -13.5%;
+        opacity: 75%;
+    }
+    #olhaomocoai{
+        width: 17%;
+        position: absolute;
+        margin-left: 67%;
+        margin-top: -13.5%;
+        opacity: 75%;
+    }
+    #olhaadancaai{
+        width: 14.7%;
         
-        <form>
-            <label for="escolha">Informações sobre modalidade: </label>
-            <select id="escolha">
-                <option value="" disabled selected>Modalidade</option>
-                <option value="Musculação">Musculação</option>
-                <option value="Zumba">Zumba</option>
-                <option value="Pilates">Pilates</option>
-                <option value="Natação infantil">Natação infantil</option>
-            </select>
-        </form>
-        <h1>Musculação</h1>
-        <img src="musculacao.jpeg" alt="Musculação" height="300" width="450">
-        <h3>A musculação é um tipo de exercício realizado com pesos de diversas cargas, amplitude e tempo de contração, o que faz dela uma atividade física indicada para pessoas de diversas idades e com diferentes objetivos.</h3>
-        <ul>
-            <li><b>Duração da modalidade:</b> Indefinido;</li>
-            <li><b>Dias de funcionamento:</b> Segunda à sábado;</li>
-            <li><b>Horários disponiveis:</b> 7h - 22h;</li>
-            <li><b>Professores:</b> Terry Crews, Vin Diesel , Gracyanne Barbosa.</li>
-            
-        </ul>
-        <hr>
-        <h1>Zumba</h1>
-        <img src="Zumba Logo.png" alt="Zumba" height="150" width="300">
-        <img src="zumba.jpeg" alt="Zumba">
-        <h3>Zumba Fitness é uma aula que mistura movimentos de dança e ginástica, embalados por ritmos latinos e internacionais como Cumbia, Reggaeton, Salsa e Merengue.</h3>
-        <h4>Benefícios: Gasto calórico, Aumento do metabolismo, Eliminação de toxinas, Recrutamento de vários músculos, Benefícios para o coração, entre outros </h4>
-        <ul>
-            <li><b>Duração da modalidade:</b> 45min;</li>
-            <li><b>Dias de funcionamento:</b> Terça e quinta;</li>
-            <li><b>Horários disponiveis:</b> 7h-7:45h, 10h-10:45h, 14h-14:45h, 18h-18:45h;</li>
-            <li><b>Professores:</b>  Dwayne Johnson</li>
-        </ul>
-        <hr>
-        
-        <h1>Pilates</h1>
-        <img src="Pilates.png" alt="Pilates" height="" width="">
-        
-        <h3>Pilates é um sistema de exercícios de alongamento e fortalecimento da musculatura. Essa técnica busca melhorar o equilíbrio, a flexibilidade e a postura corporal</h3>
-        <ul>
-            <li><b>Duração da modalidade:</b> 1hora;</li>
-            <li><b>Dias de funcionamento:</b> Segunda, quarta e sexta;</li>
-            <li><b>Horários disponiveis:</b> 9h-10h, 15h-16h, 19h-20h;</li>
-            <li><b>Professores:</b> Segunda e Sexta: Luíza Sonsa, - Quarta: Paulo Muzy</li>
-        </ul>
-        <hr>
-        <h1>Natação Infantil</h1>
-        <img src="natacao-infantil.png" alt="Natação" height="300" width="450">
+        position: absolute;
+        margin-left: 67%;
+        margin-top: 7%;
+        opacity: 75%;
+    }
+    #olhaologoai{
+        width: 17%;
+        position: absolute;
+        margin-left: 18%;
+        margin-top: 7%;
+        opacity: 75%;
+    }
     
-        <h3>Os exercícios praticados na água promovem fortalecimento da musculatura, trabalham o equilíbrio e a coordenação motora, auxiliando, portanto, no processo de aprender a engatinhar e a andar. Geralmente, as aulas de natação para bebês têm músicas, o que as torna mais recreativas e lúdicas, exercitando a memória.</h3>
-        <ul>
-            <li><b>Duração da modalidade:</b> 1:30h;</li>
-            <li><b>Dias de funcionamento:</b> Segunda - Sábado</li>
-            <li><b>Horários disponiveis:</b> 7h-8:30h, 19h-20h;</li>
-            <li><b>Professores:</b> Segunda, quarta e sexta: Michael Phelps, - Terça, quinta e sábado: Cesar Cielo.</li>
+    h2{
+        text-align: center;
+    }
+    #musculacao > ul > li{
+        list-style-type: none;
+        padding-bottom: 5px;
+        align-items: center;
+        text-align: center;
+    }
+    #musculacao > p{
+        text-align: center;
+    }
+    #Zumba{
+        background-color: rgba(0, 0, 0, 0.801);
+        justify-content: space-between;
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #Zumba > p{
+        text-align: center;
+    }
+    #Zumba > ul > li{
+        list-style-type: none;
+        padding-bottom: 5px;
+        align-items: center;
+        text-align: center;
+    }
+    #Pilates{
+        background-color: rgba(0, 0, 0, 0.801);
+        justify-content: space-between;
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #Pilates > ul > li{
+        list-style-type: none;
+        padding-bottom: 5px;
+        align-items: center;
+        text-align: center;
+    }
+    #Pilates > p{
+        text-align: center;
+    }
+    #olhaoalongamentoai{
+        width: 17%;
+        
+        position: absolute;
+        margin-left: 67%;
+        margin-top: 4%;
+        opacity: 75%;
+    }
+    #olhaaelasticidadeai{
+        width: 17%;
+        position: absolute;
+        margin-left: 18%;
+        margin-top: 3%;
+        opacity: 75%;
+    }
+    #olhaopeixeai{
+        width: 17%;
+        position: absolute;
+        margin-left: 18%;
+        margin-top: 8%;
+        opacity: 75%;
+    }
+    #olhaapiscinaai{
+        width: 17%;
+        
+        position: absolute;
+        margin-left: 67%;
+        margin-top: 8%;
+        opacity: 75%;
+    }
+    #Natação{
+        background-color: rgba(0, 0, 0, 0.801);
+        justify-content: space-between;
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #Natação > ul > li{
+        list-style-type: none;
+        padding-bottom: 5px;
+        align-items: center;
+        text-align: center;
+    }
+    #Natação > p{
+        text-align: center;
+    }
+    #itens{
+        margin-right: 40px;
+        margin-top: 25px;
+    }
+    #itens a{
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #cabeca h1{
+        margin-left: 3%;
+    }
+    #cabeca h2{
+        margin-right: 10%;
+        margin-top: 4%;
+        
+    }
+    #meio{
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+    }
+    #conteudo{
+        
+        width: 40%;
+        text-align: justify;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.801);
+        padding: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #conteudo div{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 15px;
+        margin-left: 30%;
+    }
+    #conteudo input{
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: black;
+        color: white;
+    }
+    #conteudo select{
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: black;
+        color: white;
+    }
+    #conteudo button{
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: black;
+        color: white;
+    }
+    #conteudo button > a{
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+    }
+    #direita{
+        background-color: rgba(0, 0, 0, 0.801);
+        margin-left: 2%;
+        width: 35%;
+    }
+    #direita img{
+        width: 80%;
+        margin: 5%;
+        margin-left: 10%;
+        position: sticky;
+        top: 10px;
+    }
+    #esquerda{
+        background-color: rgba(0, 0, 0, 0.801);
+        margin-right: 2%;
+    }
+    #esquerda img{
+        width: 90%;
+        margin: 5%;
+        position: sticky;
+        top: 10px;
+    }
+    nav{
+        background-color: rgba(0, 0, 0, 0.801);
+        height: 50px;
+        margin-bottom: 5px;
+        padding:8px;
+        display: flex;
+        justify-content: row;
+
+        
+    }
+    nav a{
+        margin-top: 20px;
+        text-decoration: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        margin-left: 20px;
+        
+    }
+    table,tr,td,th{
+        
+        margin-left: 2.5%;
+        background-color: black;
+        border: solid 5px rgb(255, 255, 255);
+        border-radius: 10px;
+        color: aliceblue;
+
+    }
+    #tabela{
+        background-color: rgba(0, 0, 0, 0.801);
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+
+    }
+    footer{
+        
+        height: 50px;
+        margin-bottom: 5px;
+        padding:8px;
+        display: flex;
+        justify-content: row;
+        margin-left: 30%;
+
+        
+    }
+    footer a{
+        margin-top: 20px;
+        text-decoration: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        margin-left: 20px;
+        text-align: center;    
+    }
+    button{
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: black;
+        color: white;
+    }
+    button > a{
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+    }
+    #info{
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.801);
+    }
+    section form{
+        margin-bottom: 10px;
+    }
+
+    </style>
+    </head>
+    <body>
+        <div id="cabeca">
+            <a href="https://luigivanzella.github.io/Inicio/"><h1>ACADEMIA IFSP</h1></a>
+            <h2 style="font-size: 30px;">MODALIDADES</h2>
+            <div id="itens">
+                <a href="https://luigivanzella.github.io/modalidade/">CADASTRO</a>
+                <a href="https://luigivanzella.github.io/matricula/">MATRICULA</a>
+                <a href="https://luigivanzella.github.io/relatorio/">RELATORIO</a>
+            </div>
+        </div>
+        <article>
+            <div id="musculacao">
+                <div id="info">
+                    <form>
+                        <label for="escolha">Informações sobre modalidade: </label>
+                        <select id="escolha">
+                            <option value="" disabled selected>Modalidade</option>
+                            <option value="Musculação">Musculação</option>
+                            <option value="Zumba">Zumba</option>
+                            <option value="Pilates">Pilates</option>
+                            <option value="Natação infantil">Natação infantil</option>
+                        </select>
+                    </form>
+                </div>
+            <h2>Musculação</h2>
+            <P><b>A musculação é um tipo de exercício realizado com pesos de diversas cargas, amplitude e tempo de contração</b></P>
+            <p><b>o que faz dela uma atividade física indicada para pessoas de diversas idades e com diferentes objetivos.</b></p>
+            <ul>
+                <li><b>Duração da modalidade:</b></li> 
+                <li>Indefinido;</li>
+                <li><b>Dias de funcionamento:</b></li>
+                <li>Segunda à sábado;</li>
+                <li><b>Horários disponiveis:</b>
+                <li>7h - 22h;</li>
+                <li><b>Professores:</b></li> 
+                <li>Terry Crews, Vin Diesel , Gracyanne Barbosa.</li>
+                
+            </ul>
+            <div>
+                <img src="olhaamocaai.jpeg" alt="olhaamocaai" id="olhaamocaai">
+            </div>
+            <div>
+                <img src="olhaomocoai.jpeg" alt="olhaomocoai" id="olhaomocoai">
+            </div>
+            </div>
+            <hr>
+            <div id="Zumba">
+            <h2>Zumba</h2>
+            <div>
+            <img src="olhaadancaai.jpg" id="olhaadancaai" alt="olhaadancaai">
+            </div>
+                <div>
+                    <img src="olhaologoai.jpeg" id="olhaologoai" alt="olhaologoai">
+                </div>
+            <p><b>Zumba Fitness é uma aula que mistura movimentos de dança e ginástica, embalados por ritmos latinos e internacionais como Cumbia, Reggaeton, Salsa e Merengue.</b></p>
+            <p><b>Benefícios: Gasto calórico, Aumento do metabolismo, Eliminação de toxinas, Recrutamento de vários músculos, Benefícios para o coração, entre outros </b></p>
+            <ul>
+                <li><b>Duração da modalidade:</b></li>
+                <li> 45min;</li>
+                <li><b>Dias de funcionamento:</b> </li>
+                <li>Terça e quinta;</li>
+                <li><b>Horários disponiveis:</b></li>
+                <li>7h-7:45h, 10h-10:45h, 14h-14:45h, 18h-18:45h;</li>
+                <li><b>Professores:</b></li>
+                <li>Dwayne Johnson</li>
+            </ul>
+            </div>
+            <hr>
+            <div id="Pilates">
+            <h2>Pilates</h2>
+            <div>
+            <img src="olhaaelasticidadeai.png" alt="olhaaelasticidadeai" id="olhaaelasticidadeai">
+            </div>
+            <div>
+                <img src="olhaoalongamentoai.png" alt="olhaoalongamentoai" id="olhaoalongamentoai">        
+            </div>
+            <p><b>Pilates é um sistema de exercícios de alongamento e fortalecimento da musculatura. Essa técnica busca melhorar o equilíbrio, a flexibilidade e a postura corporal</b></p>
+            <ul>
+                <li><b>Duração da modalidade:</b></li>
+                <li> 1hora;</li>
+                <li><b>Dias de funcionamento:</b></li>
+                <li> Segunda, quarta e sexta;</li>
+                <li><b>Horários disponiveis:</b></li>
+                <li>9h-10h, 15h-16h, 19h-20h;</li>
+                <li><b>Professores:</b></li>
+                <li>Segunda e Sexta: Luíza Sonsa, - Quarta: Paulo Muzy</li>
+            </ul>
+            </div>
+            <hr>
+            <div id="Natação">
+            <h2>Natação Infantil</h2>
+            <div>
+                <img src="olhaopeixeai.png" alt="Natação" id="olhaopeixeai">
+            </div>
+            <div>
+                <img src="olhaapiscinaai.jfif" alt="Natação" id="olhaapiscinaai">
+            </div>
+            <p><b>Os exercícios praticados na água promovem fortalecimento da musculatura</b></p>
+            <p><b>trabalham o equilíbrio e a coordenação motora, auxiliando, portanto, no processo de aprender a engatinhar e a andar.</b></p>
+            <p><b>Geralmente, as aulas de natação para bebês têm músicas, o que as torna mais recreativas e lúdicas, exercitando a memória.</b></p>
+            <ul>
+                <li><b>Duração da modalidade:</b></li>
+                <li> 1:30h;</li>
+                <li><b>Dias de funcionamento:</b></li>
+                <li> Segunda - Sábado</li>
+                <li><b>Horários disponiveis:</b></li>
+                <li> 7h-8:30h, 19h-20h;</li>
+                <li><b>Professores:</b></li>
+                <li> Segunda, quarta e sexta: Michael Phelps, - Terça, quinta e sábado: Cesar Cielo.</li>
+
         </ul>
+        </div>
         <hr>
+        </article>
+        
         <center>
-        <table style="border: 30px;">
+        <section id="tabela">
+        <table>
             <tr>
                 <th>Número de Modalidades</th>
                 <th>Mensalidade</th>
@@ -89,9 +468,8 @@
                 <td>Todas</td>
                 <td>229,90</td>
             </tr>
-        
+
         </table>
-        </center>
         <hr>
         <form>
             <label for="numero"><b>Saiba quais alunos fazem</b> </label>
@@ -143,15 +521,20 @@
             </tr>
 
         </table>    
-        <hr>
-        <button><a href="https://luigivanzella.github.io/sair/">Sair da conta</a></button>
+        
         <br>
-        <hr>
-        <button>Listar tudo</button>
-        <button>Listar apenas um</button>
-        <button>Alterar</button>
-        <button>Excluir</button>
-        </center>
+        <button><a href="https://luigivanzella.github.io/sair/">Sair da conta</a></button>
+    
+        <section>
+    <hr>
+    <footer>
+        <a href="">LISTAR TUDO</a>
+        <a href="">LISTAR APENAS UM</a>
+        <a href="">ALTERAR</a>
+        <a href="">EXCLUIR</a>
+    </footer>
+        </article>
+    </center>
     
     </body>
 </html>
